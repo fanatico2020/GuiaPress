@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand navbar-dark bg-primary">
+  <a class="navbar-brand" href="/">GuiaPress</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="/">Home<span class="sr-only">(página atual)</span></a>
+    </li>
+    <% categories.forEach(category => { %>
+      
+        <li class="nav-item active">
+          <a class="nav-link" href="/category/<%= category.slug %>"><%= category.title %> <span class="sr-only">(página atual)</span></a>
+        </li>
+        <%}) %>
+        </ul>
+   
+    
+    
+  </div>
+  </nav>
